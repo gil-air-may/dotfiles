@@ -3,17 +3,21 @@ Plug 'tpope/vim-sensible'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'ctrlpvim/ctrlp.vim'
+Plug 'chrisbra/changesPlugin'
 Plug 'tpope/vim-commentary'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'scrooloose/nerdtree'
 Plug 'yuttie/hydrangea-vim'
+Plug 'trevordmiller/nova-vim'
 Plug 'vim-airline/vim-airline'
+Plug 'alessandroyorba/despacio' 
 Plug 'sheerun/vim-polyglot'
 Plug 'romainl/flattened'
 Plug 'arcticicestudio/nord-vim'
 Plug 'cseelus/vim-colors-tone'
 Plug 'jnurmine/Zenburn'
 Plug 'christoomey/vim-tmux-navigator'
+Plug 'KKPMW/sacredforest-vim'
 Plug 'prettier/vim-prettier', {
   \ 'do': 'yarn install',
   \ 'branch': 'release/1.x',
@@ -40,6 +44,13 @@ call plug#end()
 set nobackup
 set noswapfile
 
+set autoindent
+set copyindent
+set tabstop=2
+set softtabstop=2
+set expandtab
+set shiftwidth=2
+
 " Setup some default ignores
 let g:ctrlp_custom_ignore = {
   \ 'dir':  '\v[\/](\.(git|hg|svn)|\_site)$',
@@ -52,9 +63,10 @@ let g:ctrlp_custom_ignore = {
 " control. It also supports works with .svn, .hg, .bzr.
 let g:ctrlp_working_path_mode = 'r'
 
-colorscheme nord
-colorscheme zenburn
-
+"colorscheme nord
+"colorscheme zenburn
+"colorscheme sacredforest
+colorscheme nova
 
 "Autorun NERDTree upon booting nvim
 autocmd vimenter * NERDTree
