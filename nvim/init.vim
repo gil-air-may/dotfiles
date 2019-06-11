@@ -18,6 +18,7 @@ Plug 'cseelus/vim-colors-tone'
 Plug 'jnurmine/Zenburn'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'KKPMW/sacredforest-vim'
+Plug 'qpkorr/vim-bufkill',
 Plug 'prettier/vim-prettier', {
   \ 'do': 'yarn install',
   \ 'branch': 'release/1.x',
@@ -95,7 +96,7 @@ nnoremap <leader>/ :nohlsearch<cr>
 
 nnoremap <leader>tr :terminal<cr><i>
 nnoremap <leader>pi :PlugInstall<cr>
-nnoremap <leader>wd :bdelete<cr>
+nnoremap <leader>wd :BD<cr>
 nnoremap <leader>we :q!<cr>
 
 "Change to tab via <SPC> [n]
