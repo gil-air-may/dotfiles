@@ -1,0 +1,97 @@
+{
+  "editor.formatOnSave": true,
+  "[javascript]": {
+    "editor.formatOnSave": false
+  },
+  "eslint.autoFixOnSave": true,
+  "eslint.alwaysShowStatus": true,
+  "keyboard.dispatch": "keyCode",
+  "bracket-pair-colorizer-2.showHorizontalScopeLine": false,
+  "bracket-pair-colorizer-2.showVerticalScopeLine": false,
+  "bracket-pair-colorizer-2.colorMode": "Independent",
+
+  "vim.leader": "<space>",
+  "vim.easymotion": true,
+  "vim.autoindent": true,
+  "vim.sneak": true,
+  "vim.incsearch": true,
+
+  "vim.useSystemClipboard": true,
+  "vim.useCtrlKeys": true,
+  "vim.hlsearch": true,
+  "vim.insertModeKeyBindings": [
+    {
+      "before": ["j", "j"],
+      "after": ["<Esc>"]
+    }
+  ],
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["<leader>", "d"],
+      "after": ["d", "d"]
+    },
+    {
+      "before": ["leader", "/"],
+      "commands": [":nohl"]
+    },
+    {
+      "before": ["leader", ";"],
+      "commands": ["cursorEnd"]
+    },
+    {
+      "before": ["leader", "0"],
+      "commands": ["cursorHome"]
+    },
+    {
+      "before": ["leader", "q"],
+      "commands": ["workbench.action.nextEditor"]
+    },
+    {
+      "before": ["<C-l>"],
+      "commands": ["workbench.action.focusNextGroup"]
+    },
+    {
+      "before": ["<C-h>"],
+      "commands": ["workbench.action.focusPreviousGroup"]
+    },
+    {
+      "before": ["leader", "<tab>"],
+      "commands": ["workbench.action.previousEditor"]
+    },
+    {
+      "before": ["leader", "f", "s"],
+      "commands": [
+        {
+          "command": "workbench.action.files.save",
+          "args": []
+        }
+      ]
+    },
+    {
+      "before": ["leader", "c", "c"],
+      "commands": ["editor.action.addCommentLine"]
+    },
+    {
+      "before": ["leader", "c", "u"],
+      "commands": ["editor.action.removeCommentLine"]
+    }
+  ],
+  "vim.visualModeKeyBindingsNonRecursive": [
+    {
+      "before": ["<C-n>"],
+      "after": ["g", "b"]
+    }
+  ],
+
+  "vim.handleKeys": {
+    "<C-a>": false,
+    "<C-f>": false
+  },
+  "workbench.colorCustomizations": {
+    "statusBar.background": "#8FBCBB",
+    "statusBar.noFolderBackground": "#8FBCBB",
+    "statusBar.debuggingBackground": "#8FBCBB",
+    "statusBar.foreground": "#434C5E"
+  },
+  "workbench.colorTheme": "Panda Syntax"
+}
