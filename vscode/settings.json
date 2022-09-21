@@ -11,6 +11,8 @@
   "editor.formatOnSave": true,
   "editor.formatOnPaste": true,
   "editor.tabSize": 2,
+  //rust inlays off because they are annoying
+  "editor.inlayHints.enabled": "off",
   "[elixir]": {
     "editor.insertSpaces": true,
     "editor.tabSize": 2,
@@ -22,7 +24,13 @@
     "files.insertFinalNewline": true,
     "files.trimFinalNewlines": true
   },
-  "workbench.colorTheme": "JetBrains Rider Dark Theme",
+  "[python]": {
+    "editor.tabSize": 4
+  },
+  "[rust]": {
+    "editor.tabSize": 4
+  },
+  "workbench.colorTheme": "IntelliJ-ish Darcula",
   "editor.fontFamily": "JetBrainsMonoMedium Nerd Font Mono",
   "window.zoomLevel": 1
 }
